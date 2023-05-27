@@ -14,10 +14,23 @@ fun main() {
     //Collections
         //List
     val readOnlyShapes = listOf("Triangle","Square","Circle")
-    val shapes:MutableList<String> = mutableListOf("Triangle","Square","Circle")
     println("The First item in the list is: ${readOnlyShapes[0]}")
     println()
     println("The first item in the list is :${readOnlyShapes.first()}")
     println("The list has ${readOnlyShapes.count()} items")
     println("Circle" in readOnlyShapes)
+
+    val shapes:MutableList<String> = mutableListOf("Triangle","Square","Circle")
+    shapes.add("Pentagon")
+    shapes.remove("Square")
+    println(shapes)
+
+    val readOnlyFruit = setOf("apple","banana","cherry")
+    val fruit:MutableSet<String> = mutableSetOf("apple","banana","cherry")
+    println(readOnlyFruit)
+    fruit.add("grape")
+    println(fruit)
+    println("banana" in readOnlyFruit)
+    fruit.remove("banana")
+    println(fruit)
 }
