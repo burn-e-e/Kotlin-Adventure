@@ -1,3 +1,4 @@
+import kotlin.math.PI
 fun main() {
     val name = "Mary" //val for a variable whose value ever changes
     var age = 20      //var for a variable whose value can be modified
@@ -149,21 +150,11 @@ fun main() {
             println(word)
         }
     }
-    //Functions
-   Hello()
-    println(sum(1,2))
-
-
-
     helloWorld("println")
     printMessageWithPrefix(prefix = "Log", message = "Hello")
-}
 
-fun Hello(){
-    return println("Hello World!")
-}
-fun sum(x:Int,y:Int):Int{
-    return x+y
+    println(sum(4,3))//Single expression function
+    println(circleArea(2))
 }
 fun helloWorld(input: String):String{
     return input
@@ -171,3 +162,9 @@ fun helloWorld(input: String):String{
 fun printMessageWithPrefix(message: String, prefix:String="Info"){
     println("[$prefix] $message")
 }
+//Single-expression functions
+fun sum(x:Int, y:Int) = x+y //Single expression function
+fun circleArea(radius:Int):Double = PI*radius*radius //Single expression function
+
+//Lambda expressions
+
