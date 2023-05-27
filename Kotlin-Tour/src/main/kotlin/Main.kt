@@ -104,5 +104,13 @@ fun main() {
     }
     println(description)
     //Ranges LOOP
-
+    //For
+    for (number in 0..100 step 10){ // For Each? Ye that's foreach loop dayum
+        print("$number ")
+    }
+    println()
+    val cakes = listOf<String>("carrot", "strawberry", "chocolate")
+    for (cake in cakes){
+        println("Yummy, it's a $cake cake!")
+    }
 }
