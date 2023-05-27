@@ -143,6 +143,31 @@ fun main() {
         })
     }
     //Exercise 4
+    val words = listOf<String>("dinosaur","limousine","language")
+    for (word in words){
+        if (word.startsWith('l')){
+            println(word)
+        }
+    }
+    //Functions
+   Hello()
+    println(sum(1,2))
 
+
+
+    helloWorld("println")
+    printMessageWithPrefix(prefix = "Log", message = "Hello")
 }
 
+fun Hello(){
+    return println("Hello World!")
+}
+fun sum(x:Int,y:Int):Int{
+    return x+y
+}
+fun helloWorld(input: String):String{
+    return input
+}
+fun printMessageWithPrefix(message: String, prefix:String="Info"){
+    println("[$prefix] $message")
+}
