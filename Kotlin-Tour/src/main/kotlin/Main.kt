@@ -113,4 +113,36 @@ fun main() {
     for (cake in cakes){
         println("Yummy, it's a $cake cake!")
     }
+    //While
+    var cakesEaten = 0 // Use the var key to modify the variable
+    var cakesBaked = 0
+    while(cakesEaten < 3){
+        println("Eat a cake")
+        cakesEaten++
+    }
+    do{
+        println("Bake a cake")
+        cakesBaked++
+    }while (cakesBaked < cakesEaten)
+    //Exercise 2
+
+    var pizzaSlices = 0
+    pizzaSlices++
+    do {
+        println("There's only $pizzaSlices slice/s of pizza :(")
+        pizzaSlices++
+    } while ( pizzaSlices < 8 )
+    println("There are $pizzaSlices slices of pizza. Hooray! We have a whole pizza! :D")
+    //Exercise 3
+    for (number in 1..100){
+        println( when{
+            number % 15 == 0 -> "fizzbuzz"
+            number % 3 == 0 ->"fizz"
+            number % 5 ==0 -> "buzz"
+            else -> number.toString()
+        })
+    }
+    //Exercise 4
+
 }
+
