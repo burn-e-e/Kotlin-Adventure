@@ -17,4 +17,7 @@ fun main() {
     val shapes:MutableList<String> = mutableListOf("Triangle","Square","Circle")
     println("The First item in the list is: ${readOnlyShapes[0]}")
     println()
+    println("The first item in the list is :${readOnlyShapes.first()}")
+    println("The list has ${readOnlyShapes.count()} items")
+    println("Circle" in readOnlyShapes)
 }
