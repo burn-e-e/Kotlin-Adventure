@@ -33,4 +33,11 @@ fun main() {
     println("banana" in readOnlyFruit)
     fruit.remove("banana")
     println(fruit)
+    //Map
+    val readOnlyAccountBalance = mapOf(1 to 200, 2 to 444, 3 to 100)
+    val accountBalances: MutableMap<Int, Int> = mutableMapOf(1 to 100,2 to 100, 3 to 100)
+    println("The first value in the map is: ${readOnlyAccountBalance[2]}")
+    println("The first value in the map is: ${readOnlyAccountBalance[3]}")
+    println("This map has ${readOnlyAccountBalance.count()} key-value pairs")
+
 }
