@@ -1,7 +1,7 @@
 fun main() {
-    val name = "Mary"
-    val age = "20"
-    println("$name is $age years old")
+    val name = "Mary" //val for a variable whose value ever changes
+    var age = 20      //var for a variable whose value can be modified
+    println("$name is ${age+1} years old")
 
     //Basic Types
     val a: Int = 1000
@@ -67,4 +67,42 @@ fun main() {
     println("$n is spelt as '${number2word[n]}'")
 
     //Control Flow
+    val decimal:Int
+    val check =true
+    if(check){
+        decimal = 1
+    }else{
+        decimal = 2
+    }
+    println(decimal)
+
+    val a1 = 1
+    val b2 = 2
+    println(if (a1 < b2) a else b) //Returns a value: 2
+
+    //when condition in Kotlin
+    val obj = "Hello"
+    when(obj){
+        "1" -> println("One")
+        "Hello" -> println("Greeting")
+        else -> println("Unknown") // Default statement
+    }
+    val obj1 = "1"
+    val result = when(obj1){
+        "1" -> "One number"
+        "Hello" -> "Greeting"
+        else -> "Unknown"
+    }
+    println(result)
+    // when condition used as an expression
+    val temp = 18
+    val description = when{
+        temp < 0 -> "cold"
+        temp < 10 -> "warm"
+        temp < 20 -> "hot"
+        else -> "Damn hot"
+    }
+    println(description)
+    //Ranges LOOP
+
 }
