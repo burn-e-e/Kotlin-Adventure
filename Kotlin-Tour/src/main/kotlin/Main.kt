@@ -155,6 +155,7 @@ fun main() {
 
     println(sum(4,3))//Single expression function
     println(circleArea(2))
+    println({string: String -> string.uppercase()}("Hello"))
 }
 fun helloWorld(input: String):String{
     return input
@@ -167,4 +168,6 @@ fun sum(x:Int, y:Int) = x+y //Single expression function
 fun circleArea(radius:Int):Double = PI*radius*radius //Single expression function
 
 //Lambda expressions
-
+fun uppercaseString(string: String):String{
+    return string.uppercase()
+}
