@@ -166,6 +166,7 @@ fun main() {
     println(tripled)
     println(negatives)
     println(positives)
+
 }
 fun helloWorld(input: String):String{
     return input
@@ -181,4 +182,5 @@ fun circleArea(radius:Int):Double = PI*radius*radius //Single expression functio
 fun uppercaseString(string: String):String{
     return string.uppercase()
 }
-
+fun intervalInSeconds(hours: Int = 0, minutes: Int = 0, seconds: Int = 0) =
+    ((hours * 60) + minutes) * 60 + seconds
