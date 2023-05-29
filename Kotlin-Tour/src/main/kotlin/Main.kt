@@ -156,6 +156,16 @@ fun main() {
     println(sum(4,3))//Single expression function
     println(circleArea(2))
     println({string: String -> string.uppercase()}("Hello"))
+    //Assign to variable
+    val numbers = listOf<Int>(1,-2,3,-4,5,6)
+    val positives = numbers.filter { x -> x>0 }
+    val negatives = numbers.filter { x -> x<0 }
+    val doubled = numbers.map { x->x*2 }
+    val tripled = numbers.map { x->x*3 }
+    println(doubled)
+    println(tripled)
+    println(negatives)
+    println(positives)
 }
 fun helloWorld(input: String):String{
     return input
@@ -171,3 +181,4 @@ fun circleArea(radius:Int):Double = PI*radius*radius //Single expression functio
 fun uppercaseString(string: String):String{
     return string.uppercase()
 }
+
